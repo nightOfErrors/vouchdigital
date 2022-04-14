@@ -7,13 +7,15 @@ import '../logincolumn.css';
 
 const Login = () => {
 
+    // stores email and password
     const [userData, setUserData] = useState()
 
+    // handles checkbox
     function onChange(e) {
         console.log(`checked = ${e.target.checked}`);
     }
 
-
+    // Trigerd while user enters it's data and save it in real time
     const loginDetails = (e) => {
         let name = e.target.name;
         let value = e.target.value;
@@ -21,6 +23,7 @@ const Login = () => {
         setUserData({ ...userData, [name] : value })
     }
 
+    // Triggers when user click the login button
     const submitUserData = () => {
 
         const url = "https://reqres.in/api/login";
