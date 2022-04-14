@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './components/login';
+import Nav from './components/nav';
+import { Divider } from 'antd';
 
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Nav />
+      <Divider style={{marginTop:'-14px'}} />
+      <div style={{display:"flex", marginTop:'-25px', flex: '1 1 auto' }} >
+
+        <Login />
+        <div id="background" style={{ overflow:'auto', flex: 'auto', backgroundColor:"#023047"}}>
+        </div>
+        
+      </div>
+
     </div>
   );
 }

@@ -1,0 +1,20 @@
+
+#navTitle {
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 5px;
+  display: flex;
+}
+
+@media screen and (max-width: 862px) {
+  .navButton {
+    display: none;
+  }
+
+  #navTitle {
+    font-size: 17px;
+    margin-left: 40px;
+    margin-top: 5px;
+    display: flex;
+  }
+}
